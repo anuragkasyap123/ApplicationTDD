@@ -10,9 +10,9 @@ namespace OperatingSystemTests
         }
 
         [Test]
-        [TestCase(10,10,20)]
-        [TestCase("", 10, 10)]
-        public void CalculatorAddTest(int num1, int num2, int expectedOp)
+        [TestCase("10","10",20)]
+        [TestCase("", "10", 10)]
+        public void CalculatorAddTest(string num1, string num2, int expectedOp)
         {
             _calculator = new Calculator();
             var output = _calculator.Add(num1, num2);
